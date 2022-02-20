@@ -255,7 +255,7 @@ for acc in to_use:
             break
         except ChatAdminRequiredError:
             print(f'{error}{grey} User: {cy}{acc_name}{lg} -- {r}Chat Admin rights needed to add')
-            break
+            continue
         except UserAlreadyParticipantError:
             print(f'{minus}{grey} User: {cy}{acc_name}{lg} -- {r}User is already a participant')
             continue
